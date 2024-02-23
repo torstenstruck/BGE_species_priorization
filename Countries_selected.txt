@@ -1,0 +1,16 @@
+ISO,Country
+HR,Croatia
+CZ,Czechia
+FI,Finland
+FR,France
+DE,Germany
+HU,Hungary
+IT,Italy
+ME,Montenegro
+NO,Norway
+PL,Poland
+PT,Portugal
+SI,Slovenia
+ES,Spain
+SE,Sweden
+CH,Switzerland

@@ -1,0 +1,29 @@
+ISO,Country
+AL,Albania
+AM,Armenia
+BA,Bosnia-Herzegovina
+BG,Bulgaria
+HR,Croatia
+CY,Cyprus
+CZ,Czech Republic
+EE,Estonia
+FO,Faroe Islands
+GE,Georgia
+GR,Greece
+HU,Hungary
+LT,Lithuania
+LV,Latvia
+MT,Malta
+MK,Macedonia
+MD,Moldova
+ME,Montenegro
+MA,Morocco
+PL,Poland
+PT,Portugal
+RO,Romania
+RS,Serbia 
+SI,Slovenia
+SK,Slovakia
+TR,Turkey
+TN,Tunisia
+UA,Ukraine
