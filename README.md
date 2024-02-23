@@ -4,29 +4,28 @@ The Biodiversity Genomics Europe (BGE) project aims to sequence the critical bio
 
 To this aim, BGE approached its species selection process differently. The larger ERGA community was involved in developing the prioritisation process, it is based on explicit and objective criteria and the process is semi-automated to avoid human intervention in the decision process. Human intervention is necessary only in the curation of the database to ensure the automatization of the process. 
 
-The details of the species selection process will be described in a separate paper and is shown schematical in the pdf file "FlowchartSpeciesSelectionProcess". In brief, it is a four-stage process including (1) an exclusion stage, (2) a prioritisation stage employing a decision-tree model and additional ranking to ensure country and researcher representation, (3) a feasibility check with additional adjustment for genera with multiple species suggestions and (4) a final check of legal compliance. The species selection process is based on a total of 28 criteria. In the paper, we will explain each criterion in detail, to which stage it has been assigned and how it is applied in the selection process. The process generates lists of feasible species (selected, on waiting list or non-selected species), non-feasible species and excluded species (exclude due to lack of a voucher specimen or the presence of a reference genome or an ongoing reference-genome project).
+The details of the species selection process will be described in a separate paper and is shown schematical in the pdf file _FlowchartSpeciesSelectionProcess_. In brief, it is a four-stage process including (1) an exclusion stage, (2) a prioritisation stage employing a decision-tree model and additional ranking to ensure country and researcher representation, (3) a feasibility check with additional adjustment for genera with multiple species suggestions and (4) a final check of legal compliance. The species selection process is based on a total of 28 criteria. In the paper, we will explain each criterion in detail, to which stage it has been assigned and how it is applied in the selection process. The process generates lists of feasible species (selected, on waiting list or non-selected species), non-feasible species and excluded species (exclude due to lack of a voucher specimen or the presence of a reference genome or an ongoing reference-genome project).
 
 ## Implementation
-The species selection process is run by R script and additional relevant information needs to be provided by the user while it is running. Therefore, in RStudio the script should be run using "Source". The R script is provided here. 
+The species selection process is run by R script and additional relevant information needs to be provided by the user while it is running. Therefore, in RStudio the script should be run using **Source**. The R script is provided here. 
 
-It will complete the first three stages of the selection process outlined in the flow chart.
-
-
-
-The input file is an excel sheet as the provided example "Suggestions_examples".
-
-
-
+It will complete the first three stages of the selection process outlined in the flow chart.<br>
+<br>
+<br>
+The input file is an excel sheet as the provided example _Suggestions_examples_.<br>
+<br>
+<br>
 Additionally, three files need to be provided:
 
-"Widening_countries.txt" - list of countries that should be prioritized (e.g., Widening countries in the EU)
+- _Widening_countries.txt_ - list of countries that should be prioritized (e.g., Widening countries in the EU)
 
-"Countries_selected.txt" - list of countries selected in previous rounds and which shall be less prioritized than countries not selected before 
+- _Countries_selected.txt_ - list of countries selected in previous rounds and which shall be less prioritized than countries not selected before 
 
-"Individuals_selected.txt" - list of individuals (i.e., email) selected in previous rounds and which shall be less prioritized than individuals not selected before
+- _Individuals_selected.txt_ - list of individuals (i.e., email) selected in previous rounds and which shall be less prioritized than individuals not selected before
 
-Please note: If any of these three options shall not be applied, leave the file empty except for the first row with the header(s). The files themselves have to be provided for the program to run.
+> [!Note]
+> If any of these three options shall not be applied, leave the file empty except for the first row with the header(s). The files themselves have to be provided for the program to run.
 
+In BGE, we applied **model 7**, but the script runs 8 models and generates output files for them. Any of these 8 models can be selected for the actual prioritization. For the 8 possible models see _PossibleModels.pdf_.
 
-
-
+Finally, you will asked to provide the total genome size in Mb to be sequenced as well as the genome size in MB for the species that shall be put on a waiting list. In BGE, we used here **100000** and **60000**, respectively
